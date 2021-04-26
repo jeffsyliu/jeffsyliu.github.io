@@ -31,10 +31,20 @@ const useStyles = makeStyles((theme) => ({
   },
   tabPanels: {},
   img: {
-    width: "15vw",
+    width: "8vw",
     borderRadius: "25%",
-    margin: "auto",
+    margin: "4vw auto 0vw",
     border: "4px solid white",
+  },
+  h2: {
+    margin: "2vw auto 2vw",
+  },
+  quote: {
+    width: "20vw",
+    wordWrap: "break-word",
+    whiteSpace: "normal",
+    fontSize: "20px",
+    margin: "2vw auto 4vw",
   },
 }));
 
@@ -64,6 +74,11 @@ const VerticalTabs = () => {
             className={classes.tabs}
           >
             <img src={profile} alt="Avatar" className={classes.img} />
+            <h2 className={classes.h2}>Jeff SY Liu</h2>
+            <div className={classes.quote}>
+              "You compare yourself not to how far you've come, but how far you
+              still wish to go."
+            </div>
             <Tab
               label="Item One"
               className={classes.tab}
