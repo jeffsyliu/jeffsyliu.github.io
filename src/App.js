@@ -4,7 +4,8 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import TabPanel from "./TabPanel";
 import Grid from "@material-ui/core/Grid";
-import profile from "./profile.jpg";
+import profile from "./pic/profile.jpg";
+import Welcome from "./panels/welcome";
 
 function htmlProps(index) {
   return {
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "25vw",
   },
   tabPanels: {},
-  img: {
+  profile: {
     width: "8vw",
     borderRadius: "25%",
     margin: "4vw auto 0vw",
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const VerticalTabs = () => {
+const App = () => {
   const classes = useStyles();
   const [value, setValue] = useState(0);
 
@@ -73,7 +74,7 @@ const VerticalTabs = () => {
             aria-label="Vertical tabs example"
             className={classes.tabs}
           >
-            <img src={profile} alt="Avatar" className={classes.img} />
+            <img src={profile} alt="Avatar" className={classes.profile} />
             <h2 className={classes.h2}>Jeff SY Liu</h2>
             <div className={classes.quote}>
               "You compare yourself not to how far you've come, but how far you
@@ -113,7 +114,7 @@ const VerticalTabs = () => {
         </Grid>
         <Grid item xs={9}>
           <TabPanel value={value} index={0}>
-            Item One
+            <Welcome />
           </TabPanel>
           <TabPanel value={value} index={1}>
             Item Two
@@ -133,4 +134,4 @@ const VerticalTabs = () => {
   );
 };
 
-export default VerticalTabs;
+export default App;
