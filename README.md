@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Make sure to switch to dev branch.
+Make sure to switch to dev branch.\
 On master branch, it's all build code for Github page.
 
 Runs the app in the development mode.\
@@ -24,5 +24,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn deploy`
 
-This command use gh-pages to deploy.
+This command use gh-pages to deploy.\
 After running the command, the build will be put onto master branch.
