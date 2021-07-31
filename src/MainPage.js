@@ -20,6 +20,7 @@ import Grid from "@material-ui/core/Grid";
 import Welcome from "./panels/welcome";
 import TabPanel from "./TabPanel";
 import profile from "./pic/profile.jpg";
+import HideOnScroll from "./HideOnScroll";
 
 const drawerWidth = 240;
 
@@ -173,22 +174,24 @@ function MainPage(props) {
     <div className={classes.root}>
       <CssBaseline />
       <Hidden smUp implementation="css">
-        <AppBar position="fixed" className={classes.appBar}>
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              className={classes.menuButton}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" noWrap>
-              Welcome, I'm Jeff Liu
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <HideOnScroll {...props}>
+          <AppBar position="fixed" className={classes.appBar}>
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                className={classes.menuButton}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h6" noWrap>
+                Welcome, I'm Jeff Liu
+              </Typography>
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
       </Hidden>
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
