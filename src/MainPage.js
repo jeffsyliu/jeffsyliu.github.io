@@ -22,6 +22,10 @@ import AboutMe from "./panels/AboutMe";
 import TabPanel from "./TabPanel";
 import profile from "./pic/profile.jpg";
 import HideOnScroll from "./HideOnScroll";
+import Project from "./panels/Project";
+import Skills from "./panels/Skills";
+import Interests from "./panels/Interests";
+import Contact from "./panels/Contact";
 
 const drawerWidth = 240;
 
@@ -242,16 +246,16 @@ function MainPage(props) {
             <AboutMe />
           </TabPanel>
           <TabPanel value={value} index={"projects"}>
-            Projects
+            <Project />
           </TabPanel>
           <TabPanel value={value} index={"skills"}>
-            Skills
+            <Skills />
           </TabPanel>
           <TabPanel value={value} index={"interests"}>
-            Interest
+            <Interests />
           </TabPanel>
           <TabPanel value={value} index={"contact"}>
-            Contact
+            <Contact />
           </TabPanel>
         </Grid>
       </main>
