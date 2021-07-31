@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import PublicIcon from "@material-ui/icons/Public";
 import KeyboardIcon from "@material-ui/icons/Keyboard";
 import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
@@ -59,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
-  // necessary for content to be below app bar
   toolbar: {
     ...theme.mixins.toolbar,
     height: "0",
@@ -72,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ResponsiveDrawer(props) {
+function MainPage(props) {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -120,8 +118,8 @@ function ResponsiveDrawer(props) {
             </div>
           }
           className={classes.tab}
-          {...htmlProps(0)}
-          onClick={() => handleClickTab(0)}
+          {...htmlProps("aboutMe")}
+          onClick={() => handleClickTab("aboutMe")}
         />
         <Tab
           label={
@@ -130,8 +128,8 @@ function ResponsiveDrawer(props) {
             </div>
           }
           className={classes.tab}
-          {...htmlProps(1)}
-          onClick={() => handleClickTab(1)}
+          {...htmlProps("projects")}
+          onClick={() => handleClickTab("projects")}
         />
         <Tab
           label={
@@ -140,8 +138,8 @@ function ResponsiveDrawer(props) {
             </div>
           }
           className={classes.tab}
-          {...htmlProps(2)}
-          onClick={() => handleClickTab(2)}
+          {...htmlProps("skills")}
+          onClick={() => handleClickTab("skills")}
         />
         <Tab
           label={
@@ -151,8 +149,8 @@ function ResponsiveDrawer(props) {
             </div>
           }
           className={classes.tab}
-          {...htmlProps(3)}
-          onClick={() => handleClickTab(3)}
+          {...htmlProps("interests")}
+          onClick={() => handleClickTab("interests")}
         />
         <Tab
           label={
@@ -161,8 +159,8 @@ function ResponsiveDrawer(props) {
             </div>
           }
           className={classes.tab}
-          {...htmlProps(4)}
-          onClick={() => handleClickTab(4)}
+          {...htmlProps("contact")}
+          onClick={() => handleClickTab("contact")}
         />
       </Tabs>
     </div>
@@ -230,19 +228,19 @@ function ResponsiveDrawer(props) {
         <Hidden xsDown implementation="css">
           <Welcome />
         </Hidden>
-        <TabPanel value={value} index={0}>
+        <TabPanel value={value} index={"aboutMe"}>
           About Me
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        <TabPanel value={value} index={"projects"}>
           Projects
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel value={value} index={"skills"}>
           Skills
         </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={"interests"}>
           Interest
         </TabPanel>
-        <TabPanel value={value} index={4}>
+        <TabPanel value={value} index={"contact"}>
           Contact
         </TabPanel>
       </main>
@@ -250,12 +248,4 @@ function ResponsiveDrawer(props) {
   );
 }
 
-ResponsiveDrawer.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
-
-export default ResponsiveDrawer;
+export default MainPage;
