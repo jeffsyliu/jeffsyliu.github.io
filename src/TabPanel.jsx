@@ -1,19 +1,19 @@
 import React from "react";
+import Grid from '@material-ui/core/Grid';
 import PropTypes from "prop-types";
 
 const TabPanel = (props) => {
-  const { children, value, index, ...other } = props;
+  const { children, index} = props;
 
   return (
-    <div
+    <Grid 
       role="tabpanel"
       id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
-      {...other}
-      style={{ width: "100%", height: "500px" }}
+      item
+      xs={12}
     >
       {children}
-    </div>
+    </Grid>
   );
 };
 

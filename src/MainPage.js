@@ -17,7 +17,8 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid";
-import Welcome from "./panels/welcome";
+import Welcome from "./panels/Welcome";
+import AboutMe from "./panels/AboutMe";
 import TabPanel from "./TabPanel";
 import profile from "./pic/profile.jpg";
 import HideOnScroll from "./HideOnScroll";
@@ -231,21 +232,28 @@ function MainPage(props) {
         <Hidden xsDown implementation="css">
           <Welcome />
         </Hidden>
-        <TabPanel value={value} index={"aboutMe"}>
-          About Me
-        </TabPanel>
-        <TabPanel value={value} index={"projects"}>
-          Projects
-        </TabPanel>
-        <TabPanel value={value} index={"skills"}>
-          Skills
-        </TabPanel>
-        <TabPanel value={value} index={"interests"}>
-          Interest
-        </TabPanel>
-        <TabPanel value={value} index={"contact"}>
-          Contact
-        </TabPanel>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <TabPanel value={value} index={"aboutMe"}>
+            <AboutMe />
+          </TabPanel>
+          <TabPanel value={value} index={"projects"}>
+            Projects
+          </TabPanel>
+          <TabPanel value={value} index={"skills"}>
+            Skills
+          </TabPanel>
+          <TabPanel value={value} index={"interests"}>
+            Interest
+          </TabPanel>
+          <TabPanel value={value} index={"contact"}>
+            Contact
+          </TabPanel>
+        </Grid>
       </main>
     </div>
   );
