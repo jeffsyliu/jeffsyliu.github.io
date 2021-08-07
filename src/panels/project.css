@@ -1,0 +1,61 @@
+.project .title {
+  text-align: center;
+}
+
+.project .divider {
+  margin: 24px;
+}
+
+.project .nex {
+  margin: 24px;
+  height: 300px;
+}
+
+.project .nex button {
+  height: 300px;
+}
+
+.project .nex .nex-img {
+  background-color: black;
+  object-fit: contain;
+}
+
+.project .tem {
+  margin: 24px;
+  height: 300px;
+}
+
+.project .tem button {
+  height: 300px;
+}
+
+.project .tem .tem-img {
+  object-fit: contain;
+}
+
+.project .personalWebsite {
+  margin: 24px;
+  height: 300px;
+}
+
+.project .personalWebsite button {
+  height: 300px;
+}
+
+.project .personalWebsite .github-img {
+  object-fit: contain;
+}
+
+.project .leetcode {
+  margin: 24px;
+  height: 300px;
+}
+
+.project .leetcode button {
+  height: 300px;
+}
+
+.project .leetcode .leetcode-img {
+  background-color: black;
+  object-fit: contain;
+}
