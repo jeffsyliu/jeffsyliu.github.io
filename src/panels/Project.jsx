@@ -6,7 +6,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import "./project.css";
+import "./project.scss";
 import nexLogo from "../img/nex.png";
 import temLogo from "../img/taipeiEthereumMeetup.png";
 import githubLogo from "../img/github.png";

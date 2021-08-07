@@ -1,0 +1,35 @@
+.project {
+  .title {
+    text-align: center;
+  }
+  .divider {
+    margin: 24px;
+  }
+  .nex,
+  .tem,
+  .personalWebsite,
+  .leetcode {
+    margin: 24px;
+    height: 300px;
+  }
+  .nex,
+  .tem,
+  .personalWebsite,
+  .leetcode button {
+    height: 300px;
+  }
+  .nex .nex-img {
+    background-color: black;
+    object-fit: contain;
+  }
+  .tem .tem-img {
+    object-fit: contain;
+  }
+  .personalWebsite .github-img {
+    object-fit: contain;
+  }
+  .leetcode .leetcode-img {
+    background-color: black;
+    object-fit: contain;
+  }
+}

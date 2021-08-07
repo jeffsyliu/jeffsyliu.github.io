@@ -4,7 +4,7 @@ import Divider from "@material-ui/core/Divider";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import "./aboutMe.css";
+import "./aboutMe.scss";
 
 const KeyValueInfo = ({ infoKey, value }) => {
   return (
