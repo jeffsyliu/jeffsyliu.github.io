@@ -7,10 +7,10 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import "./project.css";
-import nexLogo from "../pic/nex.png";
-import temLogo from "../pic/taipeiEthereumMeetup.png";
-import githubLogo from "../pic/github.png";
-import leetcodeLogo from "../pic/leetcode.png";
+import nexLogo from "../img/nex.png";
+import temLogo from "../img/taipeiEthereumMeetup.png";
+import githubLogo from "../img/github.png";
+import leetcodeLogo from "../img/leetcode.png";
 
 const Project = () => {
   const openLink = (link) => {

@@ -5,7 +5,7 @@
 
 .cover::before {
   content: "";
-  background-image: url("/src/pic/cover.jpg");
+  background-image: url("/src/img/cover.jpg");
   background-size: cover;
   opacity: 0.5;
   position: absolute;

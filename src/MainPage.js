@@ -20,7 +20,7 @@ import Grid from "@material-ui/core/Grid";
 import Welcome from "./panels/Welcome";
 import AboutMe from "./panels/AboutMe";
 import TabPanel from "./TabPanel";
-import profile from "./pic/profile.jpg";
+import profile from "./img/profile.jpg";
 import HideOnScroll from "./HideOnScroll";
 import Project from "./panels/Project";
 import Skills from "./panels/Skills";
