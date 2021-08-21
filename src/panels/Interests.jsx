@@ -3,9 +3,12 @@ import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
+import CardHeader from "@material-ui/core/CardHeader";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
+import Avatar from "@material-ui/core/Avatar";
 import badge from "../img/badge.png";
+import cycle from "../img/cycle.jpeg";
 import Books from "./Books";
 import "./interests.scss";
 
@@ -46,7 +49,7 @@ const Interests = () => {
           <Grid item xs={12} sm={8}>
             <div className="qwiklab-desc">
               <Typography gutterBottom variant="h6" component="h2">
-                Google Cloud Study Jam
+                Join Interesting Events: Google Cloud Study Jam
               </Typography>
               I joined the Google Cloud Study Jam, which gives participants a
               30-days free Qwiklabs subscription to learn the Google Cloud
@@ -67,7 +70,21 @@ const Interests = () => {
           </Grid>
         </Grid>
         <Grid item container xs={12} sm={12} spacing={2}>
-          <Grid item xs={12} sm={6}></Grid>
+          <Grid item xs={12} sm={6}>
+            <Card className="cycle">
+              <CardHeader
+                avatar={<Avatar>J</Avatar>}
+                title="Go Cycling"
+                subheader="Taipei"
+              />
+              <CardMedia
+                className="cycle-img"
+                component="img"
+                image={cycle}
+                title="Road Bike"
+              />
+            </Card>
+          </Grid>
           <Grid item xs={12} sm={6}>
             <div className="books">
               <Typography gutterBottom variant="h6" component="h2">
