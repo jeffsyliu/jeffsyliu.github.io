@@ -1,26 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.484b4ec4.chunk.css",
-    "main.js": "/static/js/main.69c8af3e.chunk.js",
-    "main.js.map": "/static/js/main.69c8af3e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.32f3d59f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.32f3d59f.js.map",
-    "static/js/2.83c107a9.chunk.js": "/static/js/2.83c107a9.chunk.js",
-    "static/js/2.83c107a9.chunk.js.map": "/static/js/2.83c107a9.chunk.js.map",
-    "static/js/3.35009287.chunk.js": "/static/js/3.35009287.chunk.js",
-    "static/js/3.35009287.chunk.js.map": "/static/js/3.35009287.chunk.js.map",
+    "main.css": "/static/css/main.35d3f584.chunk.css",
+    "main.js": "/static/js/main.e0e9946a.chunk.js",
+    "main.js.map": "/static/js/main.e0e9946a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5acaad71.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5acaad71.js.map",
+    "static/js/2.f145d7d0.chunk.js": "/static/js/2.f145d7d0.chunk.js",
+    "static/js/2.f145d7d0.chunk.js.map": "/static/js/2.f145d7d0.chunk.js.map",
+    "static/js/3.31a00f7f.chunk.js": "/static/js/3.31a00f7f.chunk.js",
+    "static/js/3.31a00f7f.chunk.js.map": "/static/js/3.31a00f7f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.484b4ec4.chunk.css.map": "/static/css/main.484b4ec4.chunk.css.map",
-    "static/js/2.83c107a9.chunk.js.LICENSE.txt": "/static/js/2.83c107a9.chunk.js.LICENSE.txt",
-    "static/media/welcome.css": "/static/media/cover.f5234ffe.jpg",
+    "static/css/main.35d3f584.chunk.css.map": "/static/css/main.35d3f584.chunk.css.map",
+    "static/js/2.f145d7d0.chunk.js.LICENSE.txt": "/static/js/2.f145d7d0.chunk.js.LICENSE.txt",
+    "static/media/badge.bec9a92a.png": "/static/media/badge.bec9a92a.png",
+    "static/media/cover.f5234ffe.jpg": "/static/media/cover.f5234ffe.jpg",
+    "static/media/cycle.8522136e.jpeg": "/static/media/cycle.8522136e.jpeg",
+    "static/media/factfulness.f62f9d22.jpg": "/static/media/factfulness.f62f9d22.jpg",
     "static/media/github.1c95b85d.png": "/static/media/github.1c95b85d.png",
+    "static/media/how-google-works.2b523625.jpg": "/static/media/how-google-works.2b523625.jpg",
+    "static/media/how-will-you-measure-life.00ee3158.jpg": "/static/media/how-will-you-measure-life.00ee3158.jpg",
     "static/media/nex.b38ddbaa.png": "/static/media/nex.b38ddbaa.png",
-    "static/media/profile.b7f19880.jpg": "/static/media/profile.b7f19880.jpg"
+    "static/media/okr.41b2ba24.jpg": "/static/media/okr.41b2ba24.jpg",
+    "static/media/profile.b7f19880.jpg": "/static/media/profile.b7f19880.jpg",
+    "static/media/think-again.d62e7420.jpg": "/static/media/think-again.d62e7420.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.32f3d59f.js",
-    "static/js/2.83c107a9.chunk.js",
-    "static/css/main.484b4ec4.chunk.css",
-    "static/js/main.69c8af3e.chunk.js"
+    "static/js/runtime-main.5acaad71.js",
+    "static/js/2.f145d7d0.chunk.js",
+    "static/css/main.35d3f584.chunk.css",
+    "static/js/main.e0e9946a.chunk.js"
   ]
 }
