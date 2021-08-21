@@ -236,12 +236,7 @@ function MainPage(props) {
         <Hidden xsDown implementation="css">
           <Welcome />
         </Hidden>
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-        >
+        <Grid container direction="column" alignItems="center">
           <TabPanel value={value} index={"aboutMe"}>
             <AboutMe />
           </TabPanel>

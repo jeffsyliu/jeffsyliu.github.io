@@ -5,14 +5,7 @@ import Rating from "@material-ui/lab/Rating";
 
 const SkillItem = ({ skill, level }) => {
   return (
-    <Grid
-      item
-      container
-      justifyContent="space-between"
-      alignItems="center"
-      xs={12}
-      sm={6}
-    >
+    <Grid item container alignItems="center" xs={12} sm={6}>
       <Grid item xs={6}>
         <Typography variant="subtitle1" display="inline">
           {skill}

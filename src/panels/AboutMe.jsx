@@ -54,13 +54,13 @@ const HyperLink = ({ url, text }) => (
 const AboutMe = () => {
   return (
     <div className="aboutme">
-      <Grid container justifyContent="center" alignItems="center">
-        <Grid xs={12} sm={12}>
+      <Grid container alignItems="center">
+        <Grid item xs={12} sm={12}>
           <Typography variant="h4" className="title">
             About Me
           </Typography>
         </Grid>
-        <Grid xs={12} sm={12}>
+        <Grid item xs={12} sm={12}>
           <Divider className="divider" />
         </Grid>
         <Grid item xs={12} sm={4}>

@@ -19,13 +19,13 @@ const Project = () => {
 
   return (
     <div className="project">
-      <Grid container justifyContent="center" alignItems="center">
-        <Grid xs={12} sm={12}>
+      <Grid container alignItems="center">
+        <Grid item xs={12} sm={12}>
           <Typography variant="h4" className="title">
             Projects
           </Typography>
         </Grid>
-        <Grid xs={12} sm={12}>
+        <Grid item xs={12} sm={12}>
           <Divider className="divider" />
         </Grid>
         <Grid item xs={12} sm={6} md={6} lg={3}>
