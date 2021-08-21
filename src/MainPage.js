@@ -130,7 +130,8 @@ function MainPage(props) {
         <Tab
           label={
             <div style={{ color: "white" }}>
-              <KeyboardIcon style={{ verticalAlign: "middle" }} /> Projects
+              <KeyboardIcon style={{ verticalAlign: "middle" }} />
+              Side Projects
             </div>
           }
           className={classes.tab}

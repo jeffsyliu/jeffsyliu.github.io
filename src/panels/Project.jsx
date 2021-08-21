@@ -22,7 +22,7 @@ const Project = () => {
       <Grid container alignItems="center">
         <Grid item xs={12} sm={12}>
           <Typography variant="h4" className="title">
-            Projects
+            Side Projects
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12}>
