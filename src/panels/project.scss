@@ -1,4 +1,6 @@
 .project {
+  margin-top: 24px;
+
   .title {
     text-align: center;
   }
@@ -15,8 +17,10 @@
   .nex,
   .tem,
   .personalWebsite,
-  .leetcode button {
-    height: 300px;
+  .leetcode {
+    button {
+      height: 100%;
+    }
   }
   .nex .nex-img {
     background-color: black;
