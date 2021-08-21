@@ -1,0 +1,30 @@
+.interest {
+  margin-top: 24px;
+
+  .title {
+    text-align: center;
+  }
+
+  .divider {
+    margin: 24px;
+  }
+
+  .books {
+    margin: 24px auto;
+    width: 300px;
+  }
+
+  .qwiklab {
+    margin: 24px auto;
+    width: 250px;
+  }
+
+  .qwiklab-img {
+  }
+
+  .books-desc,
+  .qwiklab-desc {
+    margin: 24px;
+    padding: 12px 24px 12px;
+  }
+}
