@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   profile: {
     width: "120px",
-    borderRadius: "25%",
+    borderRadius: "50%",
     margin: "4vw auto 0vw",
     border: "4px solid white",
   },
@@ -105,7 +105,7 @@ function MainPage(props) {
         </Grid>
         <Grid>
           <Typography variant="h4" gutterBottom style={{ color: "white" }}>
-            Jeff SY Liu
+            Jeff Liu
           </Typography>
         </Grid>
       </Grid>

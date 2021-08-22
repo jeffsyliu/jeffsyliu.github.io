@@ -11,6 +11,20 @@ import factfulness from "../img/factfulness.jpg";
 import measure from "../img/okr.jpg";
 import measureLife from "../img/how-will-you-measure-life.jpg";
 
+const style = {
+  root: {
+    boxShadow:
+      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    backgroundColor: "white",
+  },
+  img: {
+    width: "100%",
+    height: "310px",
+    objectFit: "contain",
+    margin: "auto",
+  },
+};
+
 const allBooks = [
   {
     label: "How Google Works",
@@ -47,25 +61,14 @@ const Books = () => {
   };
 
   return (
-    <div
-      style={{
-        boxShadow:
-          "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-        backgroundColor: "white",
-      }}
-    >
+    <div style={style.root}>
       <Paper square elevation={0}>
-        <Typography align="center" variant="h6">
+        <Typography gutterBottom align="center" variant="h6">
           {allBooks[activeStep].label}
         </Typography>
       </Paper>
       <img
-        style={{
-          width: "100%",
-          height: "250px",
-          objectFit: "contain",
-          margin: "auto",
-        }}
+        style={style.img}
         src={allBooks[activeStep].imgPath}
         alt={allBooks[activeStep].label}
       />

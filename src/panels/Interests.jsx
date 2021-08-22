@@ -71,19 +71,24 @@ const Interests = () => {
         </Grid>
         <Grid item container xs={12} sm={12} spacing={2}>
           <Grid item xs={12} sm={6}>
-            <Card className="cycle">
-              <CardHeader
-                avatar={<Avatar>J</Avatar>}
-                title="Go Cycling"
-                subheader="Taipei"
-              />
-              <CardMedia
-                className="cycle-img"
-                component="img"
-                image={cycle}
-                title="Road Bike"
-              />
-            </Card>
+            <div className="cycle">
+              <Typography gutterBottom variant="h6" component="h2">
+                My Favorites Exercise
+              </Typography>
+              <Card>
+                <CardHeader
+                  avatar={<Avatar>J</Avatar>}
+                  title="Go Cycling"
+                  subheader="Taipei"
+                />
+                <CardMedia
+                  className="cycle-img"
+                  component="img"
+                  image={cycle}
+                  title="Road Bike"
+                />
+              </Card>
+            </div>
           </Grid>
           <Grid item xs={12} sm={6}>
             <div className="books">
