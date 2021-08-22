@@ -70,13 +70,14 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: "#5f6d7e",
   },
   content: {
     flexGrow: 1,
   },
 }));
 
-function MainPage(props) {
+const MainPage = (props) => {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -97,7 +98,7 @@ function MainPage(props) {
   };
 
   const drawer = (
-    <div style={{ backgroundColor: "#5f6d7e", height: "100%" }}>
+    <div>
       <div className={classes.toolbar} />
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid>
@@ -115,7 +116,6 @@ function MainPage(props) {
         indicatorColor="primary"
         value={value}
         onChange={handleChange}
-        aria-label="Vertical tabs example"
       >
         <Tab
           label={
@@ -199,7 +199,7 @@ function MainPage(props) {
           </AppBar>
         </HideOnScroll>
       </Hidden>
-      <nav className={classes.drawer} aria-label="mailbox folders">
+      <nav className={classes.drawer}>
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
           <Drawer
@@ -257,6 +257,6 @@ function MainPage(props) {
       </main>
     </div>
   );
-}
+};
 
 export default MainPage;
