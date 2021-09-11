@@ -24,14 +24,14 @@ const Contact = () => {
           </Typography>
         </Grid>
         <Grid item container xs={12} sm={12}>
-          <Grid item xs={12} sm={6} md={6}>
+          <Grid item xs={6} sm={6} md={6}>
             <div className="linkedin-icon">
               <a href="https://www.linkedin.com/in/jeff-sy-liu/">
                 <img src={linkedin} alt="LinkedIn Icon" />
               </a>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={6}>
+          <Grid item xs={6} sm={6} md={6}>
             <div className="gmail-icon">
               <a href="mailto:liushengyang.jeffliu@gmail.com">
                 <img src={gmail} alt="Gmail Icon"></img>
